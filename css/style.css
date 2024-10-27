@@ -1,0 +1,26 @@
+main {
+    min-height: calc(100vh - 160px);
+  }
+
+  .card {
+    max-width: 500px;  /* Ancho máximo */
+    height: 400px;      /* Altura fija para todas las tarjetas */
+    margin: auto;       /* Centrado */
+    display: flex;
+    flex-direction: column; 
+    overflow: hidden;   /* Evita que el contenido desborde */
+}
+
+.card img {
+    height: auto; /* proporcionn */
+    max-height: 200px; /* altura */
+    object-fit: cover; /* ajuste */
+}
+.card-body {
+    flex-grow: 1;       /* Ocupa el espacio restante */
+    height: auto; /* proporcionn */
+    max-height: 250px;  /* Máxima altura */
+    overflow-y: auto;   /* Agrega scroll si es necesario */
+    padding: 10px;
+    margin: 0;          /* Elimina márgenes adicionales */
+}
